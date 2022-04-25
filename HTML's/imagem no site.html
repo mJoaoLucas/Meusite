@@ -17,11 +17,23 @@
                      <p>vc tem q usar a tag <code>&lt;img src="</code>(aqui vc vai colocar o nome da foto ou diretório<code>" alt="</code>(aqui vc vai descrever sua imagem em texto<code>"&gt;</code></p>
                  <p>como exemplo</p>
                          <img src="../PNG e JPG/Foto 1.png" alt="Cristo redentor rio de janeiro">
-                 <p>código: <br> <img src="../PNG e JPG/print cod 1.png" alt="Print do cod"></p>
+                 <p class="textcode">código:</p> <br> 
+                 <section class="codigo">
+
+                 </section>
                  <p>Para colocar imagens externas, usando link, é só colocar o link da imagem entre as aspas do SCR <strong>risco:*</strong>se o site original da imagem cair, o link n vai mais funcionar</p>
                          <h2>como mudar o favicon/icone de um site</h2>
-                 <p>sempre dentro da tag &lt;head&gt;, escreva " <code>link</code>" e selecione "link:favicon", dentro das aspas do atributo <code>"href="</code>" coloque o nome ou diretorio da favicon/icon <br>codigo: <br> <img src="../PNG e JPG/cod favicon.png" alt=""><br>resultado: <br> <img src="../PNG e JPG/resultado favicon.png" alt=""></p>
-                 <h2>Como fazer imagem dinamica  </h2> <a name="imagemadaptativa"></a>
+                 <p>sempre dentro da tag &lt;head&gt;, escreva " <code>link</code>" e selecione "link:favicon", dentro das aspas do atributo <code>"href="</code>" coloque o nome ou diretorio da favicon/icon</p> <br>
+                 <p class="textcode">codigo:</p>
+                 <section class="codigo">
+                    <code>
+                        &lt;link rel="shortcut icon" href="../icon/Wikipedia-Flags-BR-Brazil-Flag.ico" type="image/x-icon"&gt;
+                    </code>
+                 </section>
+                 
+                 <p class="textcode">resultado:</p> 
+                 <img src="../PNG e JPG/resultado favicon.png" alt="">
+                 <h2>Como fazer imagem dinamica</h2> <a name="imagemadaptativa"></a>
                  <dl>
                      <dt>Imagem dinamica</dt>
                      <dd>Imagem dinamica é uma imagem q se adapta ao tamanho da tela de um usuario, se a tela for grande, aparece uma imagem, se for pequena, outra, e se for média, outra.
@@ -31,33 +43,44 @@
                  <p>ex: uma com 1000px, outra 700px e outra 450px, a mesma imagem, com três tamanhos diferentes</p>
                  <p><strong>OBS:* </strong>eu n irei ensinar a mudar o tamanho das imagens, pois isso é edição de imagem e foge do foco do site.
                              Caso queira aprender de modo fácil e rápido, recomendo esse video <a href="https://youtu.be/bDULqeGEvAw?t=479" target="_blank" rel="noopener noreferrer">aqui</a>.</p>
-                             <p>para realizarmos essas imagens adaptativas, usaremos uma tag nova, a tag <code>&lt;picture&gt;</code>, e dentro dela, a tag &lt;source&gt;, com o atributo <mark><code>media</code></mark>, <mark><code> srcset</code></mark> e <mark><code>type</code></mark> dessa forma:</p> <br>
-                             <p><strong>Dica:*</strong>Quando for abrir a tag <code>&lt;source&gt;</code> vai abrir varias opções, selecione a opção: <code>Source:media:type</code> </p>
+                             <p>para realizarmos essas imagens adaptativas, usaremos uma tag nova, a tag <code>&lt;picture&gt;</code>, e dentro dela, a tag &lt;source&gt;, com o atributo <mark><code>media</code></mark>, <mark><code> srcset</code></mark> e <mark> dessa forma:                                 
+                             </p> 
+                             <p><strong>Dica:*</strong>Quando for abrir a tag <code>&lt;source&gt;</code> vai abrir varias opções, selecione a opção: <code>Source:media</code> </p>
                              <p>após selecionado, vai aparecer assim: <br> </p>
-                             <pre>
-                    &lt;picture&gt;
-                        &lt;source media="(min-width: )" srcset="" type="image/"&gt;
-                    &lt;/picture&gt;
-                             </pre>
+                             
+                    <section class="codigo">
+                        <code>
+                            &lt;picture&gt;  <br>
+                                &lt;source media="(min-width: )" srcset="" &gt; <br>
+                            &lt;/picture&gt; <br>
+                        </code>
+                    </section>
+                             
                              <p>onde, dentro de <code>media</code> está escrito "min-width", vc vai trocar e colocar "max-width" <br> assim: <br> </p>
-                             <pre>
-                    &lt;picture&gt;
-                        &lt;source media="(max-width: )" srcset="" type="image/"&gt;
-                    &lt;/picture&gt;
-                             </pre>
+                             
+                    <section class="codigo">
+                        <code>
+                            &lt;picture&gt; <br>
+                                &lt;source media="(max-width: )" srcset="" type="image/"&gt; <br>
+                            &lt;/picture&gt; <br>
+                        </code>
+                    </section>
+                             
                              <p>dentro de <code>(max-width: )</code> vc vai colocar os pixels da sua maior imagem, assim: <br> <code> <mark>media="(max-width: 1050px )"</mark> </code>, em <code><mark>srcset=""</mark></code>
                  vc vai colocar a sua imagem maior, em <code><mark>type="image/"</mark></code> dps do " / " vc vai colocar o tipo da imagem, no meu caso, png. vc vai fazendo isso em forma decrescente até a sua menor imagem.</p>
                  <p><strong>Dica:*</strong>sempre coloque 50 pixels a mais doq sua imagem original ja tem. se for 1000 pixels o tamanho da sua imagem, coloque 1050 pixels.</p>
                              <p>agora, vc vai construindo o código dessa forma: <br></p>
-                         <pre>
-                         <code>
-                        &lt;picture&gt;
-                            &lt;source media="(max-width: 750px)" srcset="../P.png" type="image/png"&gt;
-                            &lt;source media="(max-width: 1050px)" srcset="../M.png" type="image/png"&gt;
-                            &lt;img src="../G.png" alt=""&gt;
-                        &lt;/picture>
-                         </code>
-                         </pre>
+                         
+                         <section class="codigo">
+                             <code>
+                            &lt;picture&gt; <br>
+                                &lt;source media="(max-width: 750px)" srcset="../P.png" type="image/png"&gt; <br>
+                                &lt;source media="(max-width: 1050px)" srcset="../M.png" type="image/png"&gt; <br>
+                                &lt;img src="../G.png" alt=""&gt; <br>
+                            &lt;/picture&gt; <br>
+                             </code>
+                         </section>
+                         
                          <p>Lmebre-se de começar de baixo pra cima, começa pela tag <code>img</code> dps vai subindo a tag source da maior para a menor.</p>
                          <p>resultado: <br> </p>
                          <picture>
@@ -66,6 +89,7 @@
                          <img src="../G.png" alt="">
                          </picture>
                          <p>percebe-se q de acordo com o tamanho da sua tela, a imagem vai mudar entre, G ( para a tela grande), M (para a tela média) e P (para a tela pequena)</p>
+                         <p>se quiser as três imagens usadadas como exemplo, clique <a href="../Imagensadaptativas.zip" target="_blank" rel="noopener noreferrer" download="../Imagensadaptativas.zip">aqui</a></p>
              </article>
     </main>
         

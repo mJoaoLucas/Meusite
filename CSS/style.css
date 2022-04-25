@@ -25,15 +25,97 @@
 
 body {
     font-family: var(--font-padrao);
-    background-color: var(--cor1);
+    background-color: var(--cor6);
 }
 /*fim da configuração basica*/
-
-main {
-    width: 1200px;
+header {
+    max-width: 1200px;
     margin: auto;
     background-color: var(--cor6);
 }
+header h1 {
+    text-indent: 10px;
+}
+header p {
+    text-indent: 10px;
+    line-height: 2em;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--cor6);
+    
+}
 main ul, ol {
     list-style-position: inside;
+}
+main h1 {
+    text-indent: 10px;
+    
+}
+main h2 {
+    padding-left: 10px;
+}
+.codigo {
+    background-color: rgba(0, 0, 0, 0.329);
+    margin: 10px;
+    padding: 10px;
+    width: 600px;
+   border-radius: 5px;
+   
+}
+mark {
+    background-color: rgba(0, 0, 0, 0.329);
+    margin: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+main p {
+    margin: 10px;
+    text-align: justify;
+    line-height: 2em;
+    
+}
+aside {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--cor6);
+    line-height: 2em;
+}
+
+footer {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--cor6);
+}
+footer p {
+    text-indent: 10px;
+    line-height: 2em;
+}
+main a {
+    text-decoration: none;
+    color: blue;
+}
+main a::after
+{
+    content: '\1F517';
+}
+main a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 255, 0.623)
+}
+
+footer a {
+    text-decoration: none;
+    color: blue;
+}
+footer a::after
+{
+    
+}
+footer a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 255, 0.623)
 }

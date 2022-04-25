@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    
+        <a name="comida">
+        
+    <main>
+        <article>
+            <h1>links</h1>
+                <p>
+                    para adicionar links q levam a outra pagina, escreva "a" q o VScode irá completar o code para vc <br>
+                    <code>&lt;a href=""&gt;&lt;/a&gt;</code> <br> dentro das aspas vc vai colocar o link da pagina na qual vc quer q a pessoa vá.
+                </p>
+                 <br>
+                 <p>ex:</p>
+                 <p><code>&lt;a href="https://youtube.com"&gt;&lt;/a&gt;</code><br> e dentro do código vc vai escrever a parte clicavel, ficando assim: </p>
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">clique aqui e vá ao youtube</a>
+                 <br> código: <br> <img src="../PNG e JPG/link 1.png" alt="">
+            
+            <p><strong>obs:*</strong>fazendo dessa forma, o site q vc colocou vai sobrepor o seu, caso vc queira q esse site abra em uma nova guia, escreva a tag <code>"a"</code> e aperte em <code>"a:blank"</code> <br> ex: <br>
+            <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">clique aqui e vá ao youtube</a></p>
+            <h2>link para a mesma pagina</h2>
+            <p>para direcionar algo q está na própria pagina, faça assim (use quando sua pagina for mt grande e precisa de direcionamento para achar conteudo</p>
+            <code>&lt;a href="#(nome referencia, de sua preferencia"&gt; algo para clicar, um <abbr title="é só exemplo o cabaço, n é para clicarKKKKKKKKKKKKKKKK"><font color="#d3cece">"clique aqui"</font></abbr> por exemplo &lt;/a&gt;</code> <br>
+            <p>feito isso, vc vai colocar o code a seguir onde vc quer q o link clicavel de cima leve</p>
+            <code>&lt;a name="aqui vc vai colocar o mesmo texto de referencia do código de cima, como foi usado, mas sem a #"&gt;</code>
+            <p>na pratica: <br> </p>
+            <br>
+            <a href="#pão">aqui</a>
+            <pre>
+            </pre>
+            <a name="pão">Olá!</a>
+            <p>código: <br> <img src="../PNG e JPG/link 2.png" alt=""> <img src="../PNG e JPG/link 2.1.png" alt=""></p>
+            <p> clique <a href="#comida">aqui</a> para voltar la para cima</p>
+            <h2>link em imagem</h2>
+            para adicionar link em imagem coloque a tag "a" <br>
+            
+            <code>&lt;a href="http://youtube.com" target="_blank" rel="noopener noreferrer"&gt; &lt;img src="teste..png" alt=""&gt;&lt;/a&gt;</code> <br>
+            
+            <p>feito isso, ao clicar na imagem, a pessoa será direcionada ao link q vc colocou</p>
+            
+            <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"><img src="teste..png" alt=""></a>
+            <p>código: <br> <img src="../PNG e JPG/link 3.png" alt=""></p>
+            <h2>link para outra pagina no seu servidor</h2>
+            <p>sintaxe:</p> <code>&lt;a href="pagina de exemplo.html" target="_blank" rel="noopener noreferrer" rel="next"&gt;aqui&lt;/a&gt;</code> <br>
+            <p>o rel="next" serve para mostrar para o mecanismo de busca q aquela é a proxima pagina</p>
+            
+            <a href="pagina de exemplo.html" target="_blank" rel="noopener noreferrer" rel="next">aqui</a>
+            <p>quando vc for colocar um link para uma pagina q vc n confia, tipo anuncios etc vc usa <code>rel="nofollow"</code> <br>
+                <code>&lt;a href="pagina de exemplo.html" target="_blank" rel="noopener noreferrer" rel="next" rel="nofollow"&gt;aqui&lt;/a&gt;</p></code>
+            
+                <h2>link para download</h2>
+                <p>até aqui vc ja deve imaginar como deve ser essa parte, simples, use ainda a tag <code>&lt;a&gt;</code>, dessa forma </p>
+                <p>&lt;a href="" target="_blank" rel="noopener noreferrer" download="" type="" "&gt;algo&lt;/a&gt;</p>
+                <p>onde nas aspas do <code>href=""</code> vc vai colocar o link de download, ou o arquivo. nas aspas do atributo <code>download=""</code> vc vai colocacar a mesma coisa q colocou nas aspas do <code>href=""</code>. O atributo <code>type=""</code>
+                só vai ser necessario preencher caso seja um arquivo, ai tu vai ir no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="noopener noreferrer">https://www.iana.org/assignments/media-types/media-types.xhtml</a>
+            e vai pesquisar pela a extensão do seu aquivo.. se for um zip, por exemplo, ficaria: <br>
+            <code>type="application/zip"</code>, pois é assim q mostra la no site. </p>
+            <img src="../PNG e JPG/zip.png" alt="">
+            <p>na pratica:</p>
+            <a href="../testando.zip" target="_blank" rel="noopener noreferrer" download="../testando.zip" type="application/zip">clique aqui para baixar o arquivo zip "testando"</a>
+            <br> <p>código: <br> </p>
+            <img src="../PNG e JPG/zip 1.png" alt="">
+            <p>para downloads de arquivo numa pagina web</p>
+            <p> n precisa baixar, é só exemplo</p>
+            <a href="https://code.visualstudio.com/docs/?dv=win" target="_blank" rel="noopener noreferrer " download="https://code.visualstudio.com/docs/?dv=win" >clicando aqui vai baixar o VS code.</a>
+            <p>código: <br> <img src="../PNG e JPG/download link 1.png" alt=""></p>
+            </article>
+        </main>
+
+            <footer>
+                <p><strong>clique <a href="../index.html" rel="prev">aqui</a> para voltar a pagina inicial</strong></p>
+                
+            </footer>
+     
+</body>
+</html>

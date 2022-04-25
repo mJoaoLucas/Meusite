@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+<main>
+    
+    
+        <article>
+            <h1>Listas OL e UL</h1>
+                <p> para fazer listas, pode se usar a tag <code>&lt;ol&gt;</code> (onde <code>OL</code> significa lista numerada) ou <code>&lt;ul&gt;</code>(onde <code>UL</code> significa lista com forma )
+            e dentro da Tag <code>&lt;ol&gt;</code>,<code>&lt;ul&gt;</code> vc coloca a tag <code>&lt;li&gt;</code> para inicar a lista
+                <br> ex: lista de compras (usando <code>OL</code> )
+                <ol>
+            <li>Arroz</li>
+            <li>feijao</li>
+            <li>batata</li>
+                </ol>
+                </p>
+                <p>lista de coisas a fazer (usando <code>UL</code> )</p>
+                <ul>
+            <li>arrumar casa</li>
+            <li>lavar roupa</li>
+            <li>comer</li>
+                </ul>
+                <p>código: <br> <img src="../PNG e JPG/OL e UL.png" alt=""></p>
+                <h3>atributos da tag <code>OL</code> e <code>UL</code></h3>
+                <h4><code>OL:</code></h4>
+                <p>os atributos para a tag <code>OL</code> são: <code>i, I, A, a,</code> onde " <code>i e I</code> " representa numeros romanos e " <code>A e a</code> " letras do alfabeto</p>
+                <ol type="i">
+            <li>Arroz</li>
+            <li>feijao</li>
+            <li>batata</li>
+            <hr>
+                
+                </ol>
+                <ol type="I">
+            <li>Arroz</li>
+            <li>feijao</li>
+            <li>batata</li>
+                
+                </ol>
+                <hr>
+                <ol type="a">
+            <li>Arroz</li>
+            <li>feijao</li>
+            <li>batata</li>
+            <hr>
+                
+                </ol>
+                <ol type="A">
+            <li>Arroz</li>
+            <li>feijao</li>
+            <li>batata</li>
+                
+                </ol>
+                <p>código: <br> <img src="../PNG e JPG/OL atributado.png" alt=""></p>
+                <h4><code>UL:</code></h4>
+                <p>os atributos da tag <code>UL</code> são: <code>Circle, square e disc</code></p>
+                <ul type="circle">
+            <li>arrumar casa</li>
+            <li>lavar roupa</li>
+            <li>comer</li>
+                </ul>
+                <hr>
+                <ul type="square">
+            <li>arrumar casa</li>
+            <li>lavar roupa</li>
+            <li>comer</li>
+                </ul>
+                <hr>
+                <ul type="disc">
+            <li>arrumar casa</li>
+            <li>lavar roupa</li>
+            <li>comer</li>
+                </ul>
+                <p>código: <br> <img src="../PNG e JPG/UL atributado.png" alt=""></p>
+                <p>tbm pode ter listas dentro de outras listas combinando a tag <code>ul</code> e <code>ol</code></p>
+                ex: <br>
+                <ol>
+                <li>mercado</li>
+            <ul>
+                <li>arroz</li> <li>feijao</li> <li>carne</li> <li>batata</li>
+            </ul>
+                <li>lojinha de ferramentas</li>
+            <ul>
+                <li>martelo</li> <li>trena</li> <li>fita isolante</li>
+            </ul>
+                <li>padaria</li>
+            <ul>
+                <li>pão</li> <li>salame</li> <li>queijo</li>
+            </ul>
+            </ol>
+            <p><strong>obs:*</strong>a tag <code>li</code> n precisa de <code>/li</code> fechando, é totalmente opcional, se fazer assim "<code>&lt;li&gt;</code>arroz <code>&lt;li&gt;</code>feijao <code>&lt;li&gt;</code>batata." sem fechar o <code>&lt;/li&gt;</code>, tbm funciona </p>
+            <p>código: <br> <img src="../PNG e JPG/lista dentro de lista.png" alt=""></p>
+            <p>caso vc queira q sua lista comece de um numero ou letra em especifico, coloque o atributo "start" na tag</p>
+            <p>ex: <br>
+                <ol start="6">
+                    <li>arroz</li> <li>feijao</li> <li>batata</li>
+                </ol>
+            </p>
+            <p>quando for letra, coloque o numero representando a letra no alfabeto, como exemplo o numero <code>7</code> é a letra <code>G</code>, <code>8</code> letra <code>H</code>, <code>9 </code>Letra <code>I</code></p>
+            <ol type="A" start="7">
+                <li>arroz</li> <li>feijao</li> <li>batata</li>
+            </ol>
+            <p>código: <br> <img src="../PNG e JPG/lista numero especifico.png" alt=""></p>
+            <h2>lista de definição</h2>
+            <p>usa para mostrar o significado de algo, como se fosse em um dicionario </p>
+            <p>sintaxe: <br> <pre>
+            <code>&lt;dl&gt;</code>
+                <code>&lt;dt&gt;</code> HTML <code>&lt;dt&gt;</code>
+                <code>&lt;dd&gt;</code> HTML é uma linguagem usada para desenvolver sites.<code>&lt;/dd&gt;</code>
+            <code>&lt;/dl&gt; </code> </p>
+            </pre>
+            <p>resultado na pratica</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HTML é uma linguagem usada para desenvolver sites.</dd>
+            </dl>
+                <p>código: <br> <img src="../PNG e JPG/lista de definição.png" alt="">
+                </p>
+            </article>
+        </main>
+
+
+                <footer>
+                    <p><strong>clique <a href="../index.html" rel="prev">aqui</a> para voltar a pagina inicial</strong></p>
+                </footer>
+        
+</body>
+</html>

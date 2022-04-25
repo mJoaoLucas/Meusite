@@ -13,22 +13,36 @@
             <article>
                 <h1>Audio e video no site</h1>
                 <h2>Audio</h2>
-                <p>Para conseguirmos colocar audio no site é bem simples, usaremos a tag &lt;audio&gt;, junto com o atributo <code><mark>controls</mark></code>, dessa forma:</p>
+                <p>Para conseguirmos colocar audio no site é bem simples, usaremos a tag &lt;audio&gt;, junto com o atributo <code><mark>controls.</mark></code> </p>
+                    <p class="textcode">dessa forma:</p>
                 <p><strong>OBS:*</strong> vá sempre atrás de colocar em mp3, caso queira colocar outros tipos de audios, use a source, ensinado na parte de imagens do site. </p>
-                <p>código:</p>
-                <img src="../PNG e JPG/audio .png" alt="">
+                <p class="textcode">código:</p>
+                <section>
+                    <code>
+                        &lt;audio src="../Sons/Let go  LiQWYD (No Copyright Music).mp3" controls&gt;&lt;/audio&gt;
+                    </code>
+                </section>
                 <p>resultado:</p>
                 <audio src="../Sons/Let go  LiQWYD (No Copyright Music).mp3" controls></audio>
                 
                 <h2>Videos</h2>
                 <p>para colocarmos video, podemos usar a forma n recomendada, assim:</p>
-                 <p>código: </p>
-                 <img src="../PNG e JPG/video.png" alt=""> <br>
+                 <p class="textcode">código: </p>
+                 <section>
+                     <code>
+                        &lt;video src="" controls&gt;&lt;/video&gt;
+                     </code>
+                 </section>
                  <p>resultado:</p>
                 
                 <video src="" controls></video>
-                <p>agora a forma correta e recomendada, vc vai pegar o video no qual vc tiver interesse e upar ele no youtube (essa forma é valida e n tem problema algum em usar), dps de ter o video upado no youtube, vc vai ir na parte de "compartilhar" no youtube, e vai clicar em "incorporar", eles vão te dar um código, vc vai copiar esse código e colar no seu HTML, ficando dessa forma: </p>
-                <img src="../PNG e JPG/video yt.png" alt="">
+                <p>agora a forma correta e recomendada, vc vai pegar o video no qual vc tiver interesse e upar ele no youtube (essa forma é valida e n tem problema algum em usar), dps de ter o video upado no youtube, vc vai ir na parte de "compartilhar" no youtube, e vai clicar em "incorporar", eles vão te dar um código, vc vai copiar esse código e colar no seu HTML </p>
+                    <p class="textcode">ficando dessa forma: </p>
+                <section class="codigo">
+                    <code>
+                        &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/38y_1EWIE9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+                    </code>
+                </section>
                 <p>resultado:</p>
                 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/38y_1EWIE9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

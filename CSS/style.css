@@ -34,3 +34,6 @@ main {
     margin: auto;
     background-color: var(--cor6);
 }
+main ul, ol {
+    list-style-position: inside;
+}

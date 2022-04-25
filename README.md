@@ -2,4 +2,4 @@
  mi site
 
 
-<a href="index.html">index.html</a>
+<a href="index.html" target="_blank">index.html</a>

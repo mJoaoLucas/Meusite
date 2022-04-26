@@ -111,11 +111,58 @@ footer a {
     text-decoration: none;
     color: blue;
 }
-footer a::after
-{
-    
-}
+
 footer a:hover {
     text-decoration: underline;
-    color: rgba(0, 0, 255, 0.623)
+    color: rgba(0, 0, 255, 0.623);
+    
+}
+nav#menuprincipal ul, ol {
+ list-style-position: inside;
+}
+nav#menuprincipal {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--cor6);
+}
+
+nav#menuprincipal > a {
+    display: none;
+    text-decoration: none;
+    
+
+}
+nav#menuprincipal > a:hover {
+    text-decoration: underline;
+    
+}
+nav#menuprincipal > a:active {
+    color: #000;
+    
+}
+nav#menuprincipal:hover a {
+    display: block;
+    margin: 10px;
+    
+    
+    
+
+}
+
+nav#menuprincipal > small {
+    display: none;
+    
+
+}
+nav#menuprincipal:hover small {
+    display: block;
+
+}
+nav#menuprincipal > p::after {
+ content: '\00a0\00a0\ [passe o mouse aqui]';
+ color: rgba(0, 0, 0, 0.454);
+ 
+}
+nav#menuprincipal > p {
+    font-weight: bold;
 }

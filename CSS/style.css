@@ -13,10 +13,11 @@
     --cor1: #C7F3FD;
     --cor2: #6ECBE0;
     --cor3: #237F94;
-    --cor4: #E0A46E;
+    --cor4: #e0a36ebb;
     --cor5: #945C2B;
     --cor6: #fff;
     --cor7: #000;
+    --cor8: rgba(0, 0, 0, 0.308);
     
     --font-padrao: Arial, Verdana, sans-serif;
     --font-destaque: 'Bebas Neue', sans-serif;
@@ -31,15 +32,83 @@ body {
 header {
     max-width: 1200px;
     margin: auto;
-    background-color: var(--cor6);
+    background-color: var(--cor1);
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 3px var(--cor8);
 }
 header h1 {
     text-indent: 10px;
+    text-align: center;
+    font-family: 'Bebas neue', sans-serif;
+    font-weight: normal;
+}
+#aviso {
+    text-align: left;
+    
 }
 header p {
     text-indent: 10px;
     line-height: 2em;
+    text-indent: 20px;
 }
+header h2 {
+    text-indent: 10px;
+    font-family: 'Bebas neue', sans-serif;
+    font-weight: normal;
+}
+nav#menuprincipal ul, ol {
+    list-style-position: inside;
+   }
+   nav#menuprincipal {
+       max-width: 1200px;
+       margin: auto;
+       background-color: var(--cor1);
+       box-shadow:2px 2px 3px var(--cor8);
+       padding: 6px 0px;
+       text-indent: 10px;
+   }
+   
+   nav#menuprincipal > a {
+       display: none;
+       text-decoration: none;
+       
+   
+   }
+   nav#menuprincipal > a:hover {
+       text-decoration: underline;
+       
+   }
+   nav#menuprincipal > a:active {
+       color: #000;
+       
+   }
+   nav#menuprincipal:hover a {
+       display: block;
+       margin: 10px;
+       
+       
+       
+   
+   }
+   
+   nav#menuprincipal > small {
+       display: none;
+       
+   
+   }
+   nav#menuprincipal:hover small {
+       display: block;
+   
+   }
+   nav#menuprincipal > p::after {
+    content: '\00a0\00a0\ [passe o mouse aqui]';
+    color: rgba(0, 0, 0, 0.454);
+    
+   }
+   nav#menuprincipal > p {
+       font-weight: bold;
+   }
 
 main {
     max-width: 1200px;
@@ -54,28 +123,36 @@ main h1 {
     text-indent: 10px;
     
 }
-main h2 {
+main h2, h3 {
     padding-left: 10px;
+    margin: 10px;
 }
 .codigo {
-    background-color: rgba(0, 0, 0, 0.329);
+    background-color: var(--cor4);
     margin: 10px;
     padding: 10px;
     width: 600px;
    border-radius: 5px;
+   box-shadow: 3px 3px 5px var(--cor8)
    
 }
 mark {
-    background-color: rgba(0, 0, 0, 0.329);
+    background-color: var(--cor4);
     margin: 50px;
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 3px 3px 5px var(--cor8)
+    
+}
+.mark1 {
+    margin: 50px 0px 50px 0px;
     
 }
 main p {
     margin: 10px;
     text-align: justify;
     line-height: 2em;
+    text-indent: 20px;
     
 }
 aside {
@@ -83,20 +160,25 @@ aside {
     margin: auto;
     background-color: var(--cor6);
     line-height: 2em;
+    text-indent: 20px;
 }
 
 footer {
     max-width: 1200px;
     margin: auto;
     background-color: var(--cor6);
+    
 }
 footer p {
     text-indent: 10px;
     line-height: 2em;
+    text-indent: 20px;
 }
 main a {
     text-decoration: none;
     color: blue;
+    text-indent: px;
+    
 }
 main a::after
 {
@@ -117,52 +199,29 @@ footer a:hover {
     color: rgba(0, 0, 255, 0.623);
     
 }
-nav#menuprincipal ul, ol {
- list-style-position: inside;
-}
-nav#menuprincipal {
-    max-width: 1200px;
-    margin: auto;
-    background-color: var(--cor6);
+
+.textcode {
+   background-image: linear-gradient(to right, var(--cor1), transparent);
+   padding: 5px;
+   border-radius: 5px;
 }
 
-nav#menuprincipal > a {
-    display: none;
-    text-decoration: none;
+dl {
+    text-indent: 10px;
+    padding: 10px;
+}
+blockquote {
+    text-indent: 10px;
     
+}
+.arrumarlink {
+    text-indent: 10px;
+}
+.noafter::after {
+    content: none;
+    
+}
 
-}
-nav#menuprincipal > a:hover {
-    text-decoration: underline;
-    
-}
-nav#menuprincipal > a:active {
-    color: #000;
-    
-}
-nav#menuprincipal:hover a {
-    display: block;
+iframe {
     margin: 10px;
-    
-    
-    
-
-}
-
-nav#menuprincipal > small {
-    display: none;
-    
-
-}
-nav#menuprincipal:hover small {
-    display: block;
-
-}
-nav#menuprincipal > p::after {
- content: '\00a0\00a0\ [passe o mouse aqui]';
- color: rgba(0, 0, 0, 0.454);
- 
-}
-nav#menuprincipal > p {
-    font-weight: bold;
 }

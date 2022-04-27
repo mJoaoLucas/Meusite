@@ -28,3 +28,56 @@ body {
     background-color: var(--cor6);
 }
 /*fim da configuração basica*/
+header {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--cor1);
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 3px var(--cor8);
+}
+header h1 {
+    padding-bottom: 10px;
+    padding: 10px ;
+}
+header h2 {
+    padding-left: 10PX;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--cor1);
+}
+nav a {
+    display: none;
+    margin: 10px;
+    text-decoration: none;
+}
+nav a:active {
+    color: var(--cor2);
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:visited
+{
+    color: rgb(132, 0, 255);
+}
+nav:hover a {
+    display: block;
+}
+nav p {
+    padding: 20px;
+}
+
+aside {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--cor6);
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--cor6);
+}

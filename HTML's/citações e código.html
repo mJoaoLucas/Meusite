@@ -22,50 +22,62 @@
                                 <code>&lt;p&gt; o pai do meu amigo sempre diz que: &lt;q&gt;o computador é um burro mt rapido &lt;q&gt; &lt;p&gt;</code>
                             </section> </p>
                          <h2>Citação para referencias, livros entre outros</h2>
-                         <p>para fazer uma referencia a algo, use a tag <code>&lt;blockquote cite=""&gt;</code> onde no <code>"cite=""'</code> vc vai colocar o link onde se encontra a referencia. <br>
-                    ex: na wikipedia diz q: <blockquote cite="https://pt.wikipedia.org/wiki/Brasil">Brasil (localmente [bɾaziw][b]), oficialmente República Federativa do Brasil (Loudspeaker.svg? escutar),[7]
-                        é o maior país da América do Sul e da região da América Latina, sendo o quinto maior do mundo em área territorial (equivalente a 47,3% do território sul-americano), com 8 510 345,538 km²,[8]
-                        e o sexto em população[9][10] (com mais de 213 milhões de habitantes).
-                        É o único país na América onde se fala majoritariamente a língua portuguesa e o maior país lusófono do planeta,</blockquote>
-                         </p>
-                         <p class="textcode">Código: <br> 
-                            <strong>&lt;p&gt;</strong>
-                                na wikipedia diz q: <strong>&lt;blockquote cite="https://pt.wikipedia.org/wiki/Brasil"&gt;</strong>Brasil (localmente [bɾaziw][b]), oficialmente República Federativa do Brasil (Loudspeaker.svg? escutar),[7]
-                                é o maior país da América do Sul e da região da América Latina, sendo o quinto maior do mundo em área territorial (equivalente a 47,3% do território sul-americano), com 8 510 345,538 km²,[8]
-                                e o sexto em população[9][10] (com mais de 213 milhões de habitantes).
-                                É o único país na América onde se fala majoritariamente a língua portuguesa e o maior país lusófono do planeta,<strong>&lt;/blockquote&gt;</strong>
-                            <strong>&lt;p&gt;</strong>
+                         <p>para fazer uma referencia a algo, use a tag <code>&lt;blockquote cite=""&gt;</code> onde no <code>"cite=""'</code> vc vai colocar o link onde se encontra a referencia. </p>
+                    <p class="textcode">ex:</p> 
+                    <p>
+                        na wikipedia diz q: <blockquote cite="https://pt.wikipedia.org/wiki/Brasil">Brasil (localmente [bɾaziw][b]), oficialmente República Federativa do Brasil (Loudspeaker.svg? escutar),[7]
+                            é o maior país da América do Sul e da região da América Latina, sendo o quinto maior do mundo em área territorial (equivalente a 47,3% do território sul-americano), com 8 510 345,538 km²,[8]
+                            e o sexto em população[9][10] (com mais de 213 milhões de habitantes).
+                            É o único país na América onde se fala majoritariamente a língua portuguesa e o maior país lusófono do planeta,</blockquote>
+                    </p>
+                         
+                         <p class="textcode">Código: </p> 
+                            <section class="codigo">
+                                <code>
+                                    <strong>&lt;p&gt;</strong>
+                                        na wikipedia diz q: <strong>&lt;blockquote cite="https://pt.wikipedia.org/wiki/Brasil"&gt;</strong>Brasil (localmente [bɾaziw][b]), oficialmente República Federativa do Brasil (Loudspeaker.svg? escutar),[7]
+                                        é o maior país da América do Sul e da região da América Latina, sendo o quinto maior do mundo em área territorial (equivalente a 47,3% do território sul-americano), com 8 510 345,538 km²,[8]
+                                        e o sexto em população[9][10] (com mais de 213 milhões de habitantes).
+                                        É o único país na América onde se fala majoritariamente a língua portuguesa e o maior país lusófono do planeta,<strong>&lt;/blockquote&gt;</strong>
+                                    <strong>&lt;p&gt;</strong>
+                                </code>
+                            </section>
                          <p>visualmente n muda nada, mas novamente, serve para ajudar o mecanismo de busca, então é recomendado colocar.</p>
                          <h2>Tag code</h2>
                          <p>Para escrever codigos complexos, use a tag <code>&lt;code&gt;</code> ela vai gerar espaçamentos iguais entre os caracteres </p>
-                         <p> ex: código sem a tag CODE:  <q>document.getElementBy Id('teste')</q><br>
-                    ex: código com a tag CODE: <code><q>document.getElementBy Id('teste')</q></code> 
-                    <p>serve tbm usando junto com a tag <code>&lt;pre&gt;</code>, vai mostrar o codigo exatamento da forma q está escrito na fonte <br> <br>
-                        ex:
-                            código escrito só com a tag <code>CODE</code> <br> <br>
-                            <code>int(input('Digite um número')) num =
-                            if num % 2 == 0:
-                            print(f'0 número {num} é PAR')
-                            I
-                            else:
-                            print(f'0 número {num} é ÍMPAR')
-                            print('Fim do programa') <br>
-                        </code> <br> ficou sem formatação, feio, horrivel de se ler, ruim até para identificar a linguagem em q está o código <br> <br>
-                        ex: código com a tag CODE e a tag PRE juntos. <br>
-<section>
-<pre>
-<code>
-int(input('Digite um número')) num = 
-if num % 2 == 0: 
-print(f'0 número {num} é PAR')I 
-else: f'0 número {num} é ÍMPAR') 
-print('Fim do programa')
-</code>
-</pre>
+                         <p class="textcode"> ex: </p> 
+                         <p>código sem a tag CODE:  <q>document.getElementBy Id('teste')</q></p>
+                    <p class="textcode">ex:</p> 
+                    <p>código com a tag CODE: <code><q>document.getElementBy Id('teste')</q></p></code> 
+                    <p>serve tbm usando junto com a tag <code>&lt;pre&gt;</code>, vai mostrar o codigo exatamento da forma q está escrito na fonte </p>
+                        <p class="textcode">ex:</p>
+                            <p>código escrito só com a tag <code>CODE</code> </p> 
+                            
+                            <section class="codigo">
+                                <p>
+                                    <code>int(input('Digite um número')) num =
+                                    if num % 2 == 0:
+                                    print(f'0 número {num} é PAR')
+                                    I
+                                    else:
+                                    print(f'0 número {num} é ÍMPAR')
+                                    print('Fim do programa')
+                                                            </code>
+                                </p>
+                            </section>
+                         <p>ficou sem formatação, feio, horrivel de se ler, ruim até para identificar a linguagem em q está o código  </p>
+<p class="textcode">ex:</p> 
+<p>código com a tag CODE e a tag PRE juntos.</p>
+<section class="codigo">
+    <pre><code><p>int(input('Digite um número')) num =
+    if num % 2 == 0:
+    print(f'0 número {num} é PAR')I
+    else: f'0 número {num} é ÍMPAR')
+    print('Fim do programa')</p></code></pre>
 </section>
-<p class="textcode">código:</p> 
-                         <code>
-                             <pre>
+    <p class="textcode">código:</p>
+    <code>
+    <pre>
 <section class="codigo">
 &lt;pre&gt;
     &lt;code&gt;

@@ -9,24 +9,26 @@
 </head>
 <body>
     
-        <a name="comida">
+        <a name="comida"> </a>
         
     <main>
         <article>
             <h1>links</h1>
                 <p>
-                    para adicionar links q levam a outra pagina, escreva "a" q o VScode irá completar o code para vc <br>
-                    <code>&lt;a href=""&gt;&lt;/a&gt;</code> <br> dentro das aspas vc vai colocar o link da pagina na qual vc quer q a pessoa vá.
-                </p>
-                 <br>
-                 <p class="textocode">ex:</p>
+                    para adicionar links q levam a outra pagina, escreva "a" q o VScode irá completar o code para vc  </p>
+                    <p><code>&lt;a href=""&gt;&lt;/a&gt;</code> <br> dentro das aspas vc vai colocar o link da pagina na qual vc quer q a pessoa vá.</p>
+               
+                 
+                 <p class="textcode">ex:</p>
                      <section class="codigo">
                          <code>
                              &lt;a href="https://youtube.com"&gt;&lt;/a&gt;
                          </code>
                      </section>
-                    e dentro do código vc vai escrever a parte clicavel, ficando assim: 
-                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">clique aqui e vá ao youtube</a>
+                    <p>e dentro do código vc vai escrever a parte clicavel, ficando assim: </p>
+
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" >clique aqui e vá ao youtube</a>
+
                   <p class="textcode">código: </p>
                   <section class="codigo">
                       <code>
@@ -35,8 +37,9 @@
 
                   </section>
             
-            <p><strong>obs:*</strong>fazendo dessa forma, o site q vc colocou vai sobrepor o seu, caso vc queira q esse site abra em uma nova guia, escreva a tag <code>"a"</code> e aperte em <code>"a:blank"</code> <br> ex: <br>
-            <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">clique aqui e vá ao youtube</a></p>
+            <p><strong>obs:*</strong>fazendo dessa forma, o site q vc colocou vai sobrepor o seu, caso vc queira q esse site abra em uma nova guia, escreva a tag <code>"a"</code> e aperte em <code>"a:blank"</code></p> 
+             <p class="textcode">ex: </p>
+            <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">clique aqui e vá ao youtube</a>
             <h2>link para a mesma pagina</h2>
             <p>para direcionar algo q está na própria pagina, faça assim (use quando sua pagina for mt grande e precisa de direcionamento para achar conteudo</p>
             <section class="codigo">
@@ -50,19 +53,162 @@
                     &lt;a name="aqui vc vai colocar o mesmo texto de referencia do código de cima, como foi usado, mas sem a #"&gt;
                 </code>
             </section>
-            <p>na pratica: <br> </p>
-            <br>
+            <p>na pratica:</p>
+                <a name="cima" class="noafter"></a>
+                <a href="#pão" class="noafter">aqui</a>
+                <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </pre>
             
-                <a href="#pão">aqui</a>
-            
-            <a name="pão">Olá!</a>
+            <a name="pão" class="noafter">Olá!</a> <br>
+            <a href="#cima" class="noafter">para voltar</a>
             <p class="textcode">código:</p> 
             <section class="codigo" id="espacogrande">
                 <code>
                     &lt;a href="#pão"&gt;aqui&lt;/a&gt; <br> &lt;a name="pão"&gt;Olá!&lt;/a&gt;
                 </code>
             </section>
-            <p> clique <a href="#comida">aqui</a> para voltar la para cima</p>
+            <p> clique <a href="#comida" class="noafter">aqui</a> para voltar la para cima</p>
             <h2>link em imagem</h2>
             <p>para adicionar link em imagem coloque a tag "a" </p>   
             <section class="codigo">
@@ -73,7 +219,7 @@
             
             <p>feito isso, ao clicar na imagem, a pessoa será direcionada ao link q vc colocou</p>
             
-            <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"><img src="../PNG e JPG/teste.png" alt=""></a>
+            <a href="http://youtube.com" target="_blank" rel="noopener noreferrer" class="noafter"><img src="../PNG e JPG/teste.png" alt=""></a>
 
             <p class="textcode">código:</p>
                 <section class="codigo">
@@ -84,7 +230,8 @@
                     </code>
                 </section>
             <h2>link para outra pagina no seu servidor</h2>
-            <p>sintaxe:</p> <code>&lt;a href="pagina de exemplo.html" target="_blank" rel="noopener noreferrer" rel="next"&gt;aqui&lt;/a&gt;</code> <br>
+            <p class="textcode">sintaxe:</p> 
+            <p class="codigo"><code>&lt;a href="pagina de exemplo.html" target="_blank" rel="noopener noreferrer" rel="next"&gt;aqui&lt;/a&gt;</code></p> 
             <p>o rel="next" serve para mostrar para o mecanismo de busca q aquela é a proxima pagina</p>
             
             <a href="pagina de exemplo.html" target="_blank" rel="noopener noreferrer" rel="next">aqui</a>
@@ -98,7 +245,7 @@
             
                 <h2>link para download</h2>
                 <p>até aqui vc ja deve imaginar como deve ser essa parte, simples, use ainda a tag <code>&lt;a&gt;</code></p>
-                 <p class="textcode">dessa forma </p>
+                 <p class="textcode">dessa forma: </p>
                 <section class="codigo">
                     <code>
                         &lt;a href="" target="_blank" rel="noopener noreferrer" download="" type="" "&gt;algo&lt;/a&gt;
@@ -109,7 +256,7 @@
             e vai pesquisar pela a extensão do seu aquivo.. se for um zip, por exemplo, ficaria: <br>
             <code>type="application/zip"</code>, pois é assim q mostra la no site. </p>
            
-            <p>na pratica:</p>
+            <p class="textcode">na pratica:</p>
             <a href="../testando.zip" target="_blank" rel="noopener noreferrer" download="../testando.zip" type="application/zip">clique aqui para baixar o arquivo zip "testando"</a>
             <br> <p class="textcode">código: </p>
            <section class="codigo">
